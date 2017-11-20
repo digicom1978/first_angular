@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Tour of Heroes';
+
+  dataBindings = ["1","2","3"];
+  dataObjects = [{"name":"A1"},{"name":"A2"},{"name":"B1"}];
 }

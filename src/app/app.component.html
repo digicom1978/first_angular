@@ -1,10 +1,41 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!
+    {{title}}
   </h1>
+  <app-heroes></app-heroes>
+
   <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
+
+Practice 4 ways of data binding<br>
+-----------------------------------<br>
+1. Interpolation (double curly braces) <br> 
+<input type='text' value={{title}}> <br>
+2. Property Binding ([...]='variable name') <br>
+<input type='text' [value]='title'> <br>
+
+
+<ul *ngIf='dataBindings.length'>
+    <li *ngFor='let binding of dataBindings'>{{binding}}</li>  
+</ul>
+  <!--<table>
+    <tr *ngFor='let binding of dataBindings'>
+      <td><input type='text' [(ngModel)]="binding"></td>
+    </tr>
+  </table> -->
+  
+
+<ul *ngIf='dataObjects.length'>
+  <li *ngFor='let obj of dataObjects'>{{obj.name}}</li>
+</ul>
+<!--<table>
+    <tr *ngFor='let obj of dataObjects'>
+      <td><input type='text' [(ngModel)]="obj.name"></td>
+    </tr>
+ </table> -->
+
+
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>

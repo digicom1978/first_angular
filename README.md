@@ -1,3 +1,28 @@
+1st..................................
+Install Angular 2 dev environment by using Angular Cli
+    - https://coursetro.com/posts/code/16/How-to-Install-Angular-2-with-the-Angular-cli
+    npm install -g angular-cli
+
+    ng new begin-angular
+    cd begin-angular
+    ng serve
+
+2nd..................................
+Edit index.html
+
+<ul *ngIf='dataBindings.length'>
+  <li *ngFor='let binding of dataBindings'>'binding'</li>
+</ul>
+
+
+3rd..................................
+C:\workspace_angular2\begin-angular\src>ng generate component heroes
+
+
+
+
+
+
 # BeginAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
